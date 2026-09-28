@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Investment Trading | Visual Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-banner">VISUAL DEMO • FICTIONAL DATA • NO REAL MONEY OR CRYPTOCURRENCY IS PROCESSED</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">X <span>Investment Trading</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#plans">Plans</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <button class="nav-btn" data-open-auth="login">Login</button>
+      <button class="nav-btn filled" data-open-auth="register">Register</button>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">X INVESTMENT TRADING • DEMO</span>
+        <h1>Build your next financial story with a modern trading dashboard.</h1>
+        <p>Explore a polished investment-platform concept with simulated plans, account management, deposits, withdrawals, testimonials and support tools.</p>
+        <div class="hero-actions">
+          <button class="primary" data-open-auth="register">Create Demo Account</button>
+          <a class="secondary" href="#plans">View Plans</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Demo account</span><span>✓ Responsive design</span><span>✓ Simulated transactions</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-top"><span>DEMO PORTFOLIO</span><span class="live-dot">● Demo</span></div>
+        <div class="hero-balance">$84,250.00</div>
+        <div class="mini-positive">+12.8% simulated performance</div>
+        <div class="chart">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="stats">
+          <div><small>Invested</small><strong>$62,500</strong></div>
+          <div><small>Active plans</small><strong>3</strong></div>
+          <div><small>24h demo</small><strong>+4.2%</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="section-title">
+        <span class="eyebrow">SIMULATED PLANS</span>
+        <h2>Choose a demo investment plan</h2>
+        <p>All figures below are fictional visual-demo figures and are not promises of actual investment performance.</p>
+      </div>
+      <div class="plans-grid" id="plansGrid"></div>
+    </section>
+
+    <section class="section split" id="how">
+      <div>
+        <span class="eyebrow">HOW IT WORKS</span>
+        <h2>A complete platform concept in one place.</h2>
+      </div>
+      <div class="steps">
+        <article><b>01</b><h3>Create an account</h3><p>Use the demo registration flow to create a fictional account.</p></article>
+        <article><b>02</b><h3>Select a plan</h3><p>Choose one of the simulated 24-hour plans and see it appear in your dashboard.</p></article>
+        <article><b>03</b><h3>Track your dashboard</h3><p>View balances, active plans, transactions and simulated withdrawal requests.</p></article>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-title">
+        <span class="eyebrow">TESTIMONIALS</span>
+        <h2>Demo customer feedback</h2>
+        <p>Names and comments in this section are fictional placeholders for the mockup.</p>
+      </div>
+      <div class="testimonial-grid">
+        <article><div class="stars">★★★★★</div><p>“The dashboard concept is clean and easy to navigate.”</p><strong>Jordan M.</strong><small>Demo customer</small></article>
+        <article><div class="stars">★★★★★</div><p>“I like how the account activity and plan information are presented.”</p><strong>Alex R.</strong><small>Demo customer</small></article>
+        <article><div class="stars">★★★★★</div><p>“The support and transaction sections make the platform feel complete.”</p><strong>Taylor K.</strong><small>Demo customer</small></article>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-title"><span class="eyebrow">FAQ</span><h2>Frequently asked questions</h2></div>
+      <div class="faq-list">
+        <details><summary>Is this a real investment service?</summary><p>No. This version is a visual demo. It does not process investments, BTC, withdrawals or real customer funds.</p></details>
+        <details><summary>Are the displayed returns guaranteed?</summary><p>No. The figures are fictional placeholders for the visual mockup and must not be represented as guaranteed real returns.</p></details>
+        <details><summary>Can users create accounts?</summary><p>The demo includes a browser-only registration and login flow. It does not create a real online account database.</p></details>
+        <details><summary>Does the BTC address accept cryptocurrency?</summary><p>No. The BTC area is deliberately nonfunctional and uses a clearly fictional demo address.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><a class="brand" href="#home">X <span>Investment Trading</span></a><p>Visual demo website for design and presentation purposes.</p></div>
+    <div class="footer-links"><a href="#faq">FAQ</a><a href="#" data-modal="terms">Terms</a><a href="#" data-modal="privacy">Privacy</a><a href="#" data-modal="risk">Risk Disclosure</a><a href="#support">Support</a></div>
+  </footer>
+
+  <section id="support" class="support-strip">
+    <div><span class="eyebrow">SUPPORT</span><h2>Need help with the demo?</h2><p>Use the contact form inside the demo dashboard.</p></div>
+    <button class="primary" data-open-auth="login">Open Demo Dashboard</button>
+  </section>
+
+  <div class="modal hidden" id="authModal">
+    <div class="modal-card">
+      <button class="close" data-close="authModal">×</button>
+      <div class="brand">X <span>Investment Trading</span></div>
+      <p class="demo-label">VISUAL DEMO ONLY</p>
+      <h2 id="authTitle">Welcome Back</h2>
+      <p id="authSub">Sign in to the demo dashboard.</p>
+      <form id="authForm">
+        <label>Email</label><input id="authEmail" type="email" required placeholder="you@example.com">
+        <label>Password</label><div class="password-wrap"><input id="authPassword" type="password" minlength="6" required placeholder="At least 6 characters"><button type="button" id="showPass">Show</button></div>
+        <button class="primary wide" type="submit" id="authSubmit">Sign In</button>
+      </form>
+      <p class="switch"> <span id="switchText">Don't have an account?</span> <button type="button" id="switchAuth">Register</button></p>
+      <button class="ghost wide" id="demoEntry">Enter Demo Dashboard</button>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="legalModal">
+    <div class="modal-card legal"><button class="close" data-close="legalModal">×</button><h2 id="legalTitle"></h2><div id="legalBody"></div></div>
+  </div>
+
+  <section id="dashboard" class="dashboard hidden">
+    <div class="dash-top">
+      <div class="brand">X <span>Investment Trading</span></div>
+      <div class="dash-actions"><button class="ghost" id="adminBtn">Admin Demo</button><button class="ghost" id="logoutBtn">Logout</button></div>
+    </div>
+    <div class="dash-wrap">
+      <div class="notice"><strong>Visual Demo:</strong> all balances, deposits, plans, withdrawals and transactions are simulated.</div>
+      <div class="dash-head"><div><span class="eyebrow">CLIENT DASHBOARD</span><h1>Welcome back</h1><p id="userEmail">demo@example.com</p></div><button class="primary" id="dashSupport">Contact Support</button></div>
+      <div class="metric-grid">
+        <div class="metric"><small>Available Balance</small><strong id="dashBalance">$0.00</strong><span>Simulated</span></div>
+        <div class="metric"><small>Total Invested</small><strong id="dashInvested">$0.00</strong><span>Demo plans</span></div>
+        <div class="metric"><small>Simulated Returns</small><strong id="dashReturns">$0.00</strong><span>Fictional</span></div>
+        <div class="metric"><small>Active Investments</small><strong id="dashActive">0</strong><span>24 hour demo</span></div>
+      </div>
+      <div class="dash-grid">
+        <div class="panel">
+          <div class="panel-head"><h2>Investment Plans</h2><span>24 HOURS</span></div>
+          <div id="dashPlans"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>BTC Deposit</h2><span>NONFUNCTIONAL</span></div>
+          <div class="notice amber">Do not send cryptocurrency. This address is fictional and exists only for the visual demo.</div>
+          <label>Demo BTC address</label>
+          <div class="copy-row"><input id="btc" value="bc1qXInvestmentTradingDemoOnly" readonly><button class="ghost" id="copyBtc">Copy</button></div>
+          <label>Simulated deposit amount</label>
+          <input id="depositAmount" type="number" min="1" placeholder="5000">
+          <button class="primary wide" id="depositBtn">Add Simulated Balance</button>
+        </div>
+      </div>
+      <div class="dash-grid">
+        <div class="panel">
+          <div class="panel-head"><h2>Withdrawal</h2><span>SIMULATED</span></div>
+          <label>Amount</label><input id="withdrawAmount" type="number" min="1" placeholder="1000">
+          <label>Method</label><select id="withdrawMethod"><option>BTC (Demo)</option><option>Bank Transfer (Demo)</option></select>
+          <button class="primary wide" id="withdrawBtn">Request Demo Withdrawal</button>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>Transaction History</h2></div>
+          <div id="transactions" class="transactions"><p class="empty">No demo transactions yet.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admin" class="dashboard hidden">
+    <div class="dash-top"><div class="brand">X <span>Admin Demo</span></div><button class="ghost" id="backDash">Back to Dashboard</button></div>
+    <div class="dash-wrap">
+      <div class="notice"><strong>Admin Visual Demo:</strong> these records are fictional placeholders and are not connected to real customers or money.</div>
+      <div class="metric-grid">
+        <div class="metric"><small>Total Users</small><strong>1,284</strong><span>Demo figure</span></div>
+        <div class="metric"><small>Deposits</small><strong>$2.48M</strong><span>Simulated</span></div>
+        <div class="metric"><small>Withdrawals</small><strong>$1.17M</strong><span>Simulated</span></div>
+        <div class="metric"><small>Support Tickets</small><strong>37</strong><span>Demo figure</span></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h2>Users</h2><span>DEMO RECORDS</span></div>
+        <div class="table-wrap"><table><thead><tr><th>User</th><th>Email</th><th>Status</th><th>Plan</th><th>Balance</th></tr></thead><tbody>
+          <tr><td>Jordan M.</td><td>jordan@example.com</td><td><span class="pill">Active</span></td><td>$20,000</td><td>$70,000</td></tr>
+          <tr><td>Alex R.</td><td>alex@example.com</td><td><span class="pill">Active</span></td><td>$10,000</td><td>$40,000</td></tr>
+          <tr><td>Taylor K.</td><td>taylor@example.com</td><td><span class="pill">Pending</span></td><td>$5,000</td><td>$20,000</td></tr>
+        </tbody></table></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
